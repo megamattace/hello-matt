@@ -1,20 +1,42 @@
 body {
-    display: grid;
-    grid-template-rows: 200px 2000px 250px;
-    margin: 0px;
+  display: grid;
+  grid-template-rows: 200px 2000px 250px;
+  margin: 0px;
 }
 
 header {
-    grid-row: 1/2;
-    background: red;
+  grid-row: 1/2;
+  background: red;
 }
 
 main {
-    grid-row: 2/3;
-    background: blue;
+  grid-row: 2/3;
+  background: blue;
+  padding: 10px;
 }
 
 footer {
-    grid-row: 3/4;
-    background: yellow;
+  grid-row: 3/4;
+  background: green;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+}
+
+.cyan {
+  background: cyan;
+}
+
+.magenta {
+  background: magenta;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.black {
+  background: black;
 }
