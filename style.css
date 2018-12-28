@@ -1,9 +1,44 @@
 
+html, body {
+    height:100%;
+}
+
 body{
     background-color: #F0F0F0;
     width: auto;
+    display: grid;
     margin: 0;
-    padding: 0 30px 20px 30px;
+    grid-template-rows: 200px 1fr 200px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+header {
+    background:gray;
+    grid-row: 1/2;
+}
+
+main {
+    background:violet;
+    grid-row: 2/3;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 320px 640px 1fr;
+}
+
+.picture {
+    grid-column: 2/3;
+}
+
+.information {
+    grid-column: 3/4;
+}
+
+footer {
+    background:red;
+    grid-row: 3/4;
 }
 
 h1 {
@@ -23,7 +58,6 @@ div, h5 {
 
 p {
         font-family: Arial, Helvetica, sans-serif;
-        margin: 10px 50px;  
 }
 
  .legal {
