@@ -17,26 +17,52 @@ h1, h2, h3, h4, h5, h6, p {
 header {
   background: gray;
   grid-row: 1/2;
+  display:grid;
+  grid-template-rows: 1fr 50px;
+}
+.top-row {
+  grid-row: 1/2;
+}
+
+.logo {
+  width:100px;
+  height:auto;
+}
+
+.menu {
+grid-row: 2/3;
+background: rgb(77, 76, 76);
+display: flex;
+justify-content: space-around;
 }
 
 main {
-  background: violet;
   grid-row: 2/3;
   padding: 10px;
   display: grid;
   grid-template-columns: 1fr 320px 640px 1fr;
+  background-image: url("images/ocean.jpg");
+  background-clip: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .picture {
   grid-column: 2/3;
+  background: navy;
 }
 
 .information {
   grid-column: 3/4;
+  background: navy;
+}
+
+.background {
+  grid-column: 1/2;
 }
 
 footer {
-  background: red;
+  background: goldenrod;
   grid-row: 3/4;
   display: flex;
   flex-direction: column;
@@ -56,7 +82,7 @@ button {
 h1 {
   font-size: 50px;
   font-style: bold;
-  color: purple;
+  color: maroon;
 }
 
 h2 {
@@ -85,7 +111,7 @@ p {
   margin: 0 auto;
   width: 250px;
   height: auto;
-  border: 5px solid purple;
+  border: 5px solid maroon;
 }
 
 a {
