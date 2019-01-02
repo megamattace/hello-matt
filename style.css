@@ -55,10 +55,10 @@ header {
 
 .search-bar input, 
 .search-bar button {
-  padding: 1px 4px 1px 2px;
-  margin: 0;
-  height: 25px;
-  text-align: left;
+      padding: 1px 4px 1px 2px;
+    margin: 0;
+    height: 25px;
+    text-align: left;
 }
 
 .menu {
@@ -87,12 +87,18 @@ main {
 
 .picture {
   grid-column: 2/3;
-  background: navy;
+  background: white;
+  padding: 20px;
 }
 
 .information {
   grid-column: 3/4;
-  background: navy;
+  background: white;
+  padding: 20px;
+}
+
+.education {
+  padding: 30px 0px;
 }
 
 .background {
@@ -100,7 +106,7 @@ main {
 }
 
 footer {
-  background: goldenrod;
+  background: gray;
   grid-row: 3/4;
   display: flex;
   flex-direction: column;
@@ -120,11 +126,25 @@ button {
 h1 {
   font-size: 50px;
   font-style: bold;
-  color: maroon;
+  color: rgb(100 71 59);
 }
 
 h2 {
   font-style: italic;
+}
+
+h3 {
+  font-size: 40px;
+  font-style: bold;
+  color: rgb(100 71 59);
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 16px;
 }
 
 div, h5 {
@@ -133,6 +153,7 @@ div, h5 {
 
 p {
   font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 16px;
 }
 
 .legal {
@@ -149,10 +170,10 @@ p {
   margin: 0 auto;
   width: 250px;
   height: auto;
-  border: 5px solid maroon;
+  border: 5px solid rgb(100 71 59);
 }
 
 a {
-  color: peru;
+  color: rgb(75 155 214);
   text-decoration: none;
 }
